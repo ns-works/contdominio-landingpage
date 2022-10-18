@@ -1,0 +1,48 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+#menu {
+  box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav__item {
+  font-weight: 500;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+.nav__item:after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  width: 0;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.nav__item:hover::after {
+  width: 100%;
+  background: #2571D1;
+}
+
+.nav__item--primary {
+  font-weight: 400;
+}
+
+#read-more {
+  position: relative;
+}
+#read-more:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 0.1rem;
+  width: 0;
+  background: transparent;
+}
+#read-more:hover::after {
+  width: 100%;
+  background: #2571D1;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,58 @@
+$primary: #2571D1;
+$secondary: #F6F6F6;
+$hover-btn: #1B5DB1;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#menu {
+  box-shadow: 0 1px 10px 4px rgb(0 0 0 / 0.05);
+}
+
+.nav__item {
+
+  font-weight: 500;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+
+  &:after {
+    content: '';
+    display: block;
+    height: .2rem;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  &:hover::after {
+    width: 100%;
+    background: $primary;
+  }
+}
+
+.nav__item--primary {
+  font-weight: 400;
+}
+
+#read-more {
+
+  position: relative;
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    height: .1rem;
+    width: 0;
+    background: transparent;
+    // transition: width .5s ease, background-color .5s ease;
+  }
+  &:hover::after {
+    width: 100%;
+    background: $primary;
+  }
+
+}

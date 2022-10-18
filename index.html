@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contdomínio Contabilidade e ADM de Condominio</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+</head>
+<body>
+    <header id="menu" class="w-screen h-fit px-24 py-4 fixed top-0 z-50 flex flex-row justify-between items-center">
+        <img src="./assets/images/logo-contdominio.png" alt="Logo Contdomínio">
+
+        <nav class="hidden xl:flex flex-row items-center gap-8">
+            <a href="#" class="nav__item nav__item--secondary">INÍCIO</a>
+            <a href="#" class="nav__item nav__item--secondary">QUEM SOMOS</a>
+            <a href="#" class="nav__item nav__item--secondary">SERVIÇOS</a>
+            <a href="#" class="nav__item nav__item--primary bg-primary text-white py-2 px-4 rounded-sm flex justify-center items-center">CONTATO</a>
+        </nav>
+    </header>
+
+    <main class="h-screen flex flex-row items-center px-24">
+        <div class="w-2/5">
+            <div class="mb-20">
+                <h1 class="text-primary font-bold text-5xl">Seu patrimônio em <span class="block w-fit bg-primary text-white p-1 px-2 mt-2.5 mb-3.5">boas mãos.</span></h1>
+                <p class="text-2xl">Consultoria a síndicos, moradores e profissionais realizada por especialistas.</p>
+            </div>
+            <a id="read-more" class="text-xl text-primary w-fit flex flex-row gap-3" href="#">
+                SAIBA MAIS 
+                <img src="./assets/icons/shared/arrow-right.svg" alt="Seta para direita">
+            </a>
+        </div>
+        <div class="w-3/5">
+            <img src="./assets/images/condominio-home.png" alt="Foto Condomínio">
+        </div>
+    </main>
+</body>
+</html>
