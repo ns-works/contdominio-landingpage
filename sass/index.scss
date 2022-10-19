@@ -4,6 +4,26 @@ $hover-btn: #1B5DB1;
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #FAFAFC;
+}
+
+section, article {
+  width: 100%;
+}
+
+footer {
+  background-color: #F1F1F1;
+
+  .footer-copyright {
+    color: #FFF;
+    background-color: $primary;
+
+    padding: 0.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #menu {

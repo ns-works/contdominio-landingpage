@@ -1,5 +1,22 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #FAFAFC;
+}
+
+section, article {
+  width: 100%;
+}
+
+footer {
+  background-color: #F1F1F1;
+}
+footer .footer-copyright {
+  color: #FFF;
+  background-color: #2571D1;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu {

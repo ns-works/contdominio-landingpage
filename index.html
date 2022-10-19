@@ -17,7 +17,7 @@
     <script src="./js/tailwind.config.js"></script>
 </head>
 <body>
-    <header id="menu" class="w-screen h-fit px-24 py-4 fixed top-0 z-50 flex flex-row justify-between items-center">
+    <header id="menu" class="w-screen h-fit px-24 2xl:px-32 py-4 fixed top-0 z-50 flex flex-row justify-between items-center">
         <img src="./assets/images/logo-contdominio.png" alt="Logo Contdomínio">
 
         <nav class="hidden xl:flex flex-row items-center gap-8">
@@ -28,20 +28,154 @@
         </nav>
     </header>
 
-    <main class="h-screen flex flex-row items-center px-24">
-        <div class="w-2/5">
-            <div class="mb-20">
-                <h1 class="text-primary font-bold text-5xl">Seu patrimônio em <span class="block w-fit bg-primary text-white p-1 px-2 mt-2.5 mb-3.5">boas mãos.</span></h1>
-                <p class="text-2xl">Consultoria a síndicos, moradores e profissionais realizada por especialistas.</p>
-            </div>
-            <a id="read-more" class="text-xl text-primary w-fit flex flex-row gap-3" href="#">
-                SAIBA MAIS 
-                <img src="./assets/icons/shared/arrow-right.svg" alt="Seta para direita">
-            </a>
-        </div>
-        <div class="w-3/5">
-            <img src="./assets/images/condominio-home.png" alt="Foto Condomínio">
-        </div>
+    <main class="px-24 2xl:px-32">
+
+        <section>
+
+            <article class="h-screen flex flex-row items-center">
+
+                <div class="w-2/5">
+                    <div class="mb-20">
+                        <h1 class="text-primary font-bold text-5xl">Seu patrimônio em <span class="block w-fit bg-primary text-white p-1 px-2 mt-2.5 mb-3.5">boas mãos.</span></h1>
+                        <p class="text-2xl">Consultoria a síndicos, moradores e profissionais realizada por especialistas.</p>
+                    </div>
+                    <a id="read-more" class="text-xl text-primary w-fit flex flex-row gap-3" href="#">
+                        SAIBA MAIS 
+                        <img src="./assets/icons/shared/arrow-right.svg" alt="Seta para direita">
+                    </a>
+                </div>
+                <div class="w-3/5 flex justify-end">
+                    <img src="./assets/images/condominio-home.png" alt="Foto Condomínio">
+                </div>
+
+            </article>
+
+            <article>
+
+                <h2 class="article-title">QUEM SOMOS</h2>
+
+                <h3>Por que Contdomínio?</h3>
+
+                <p>Auxiliamos síndicos, moradores e profissionais em tudo que abrange as demandas de condomínios.</p>
+
+                <h3>História</h3>
+
+                <p>
+                    A Contdomínio é um escritório contábil e administradora de condomínios renomada que nasceu de uma sociedade de colegas
+                    de profissão buscando trazer somatória de conhecimentos.
+                </p>
+
+                <p>
+                    Tendo como maior objetivo entregar serviços de qualidade e atendimento diferenciado, inovando nos conceitos de
+                    atendimento a clientes, síndicos e moradores.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h2 class="article-title">SERVIÇOS</h2>
+
+                <p class="article-description">Nossos serviços se concentram em várias áreas da administração do seu negócio.</p>
+
+            </article>
+
+            <article>
+
+                <div>
+
+                    <h2>VAMOS CONVERSAR</h2>
+
+                    <p>Entre em contato conosco pelas nossas redes sociais.</p>
+
+                </div>
+
+                <div id="keep-in-touch-row"></div>
+
+                <div>
+
+                    <div>
+
+                        <p>@contdominio</p>
+
+                    </div>
+                    <div>
+
+                        <p>comercial@contdominio.com.br</p>
+
+                    </div>
+                    <div>
+
+                        <p>(11) 4803-1859</p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article>
+
+                <h2 class="article-title">NOSSOS PARCEIROS</h2>
+
+                <p class="article-description">Empresas parceiras que atuam em conjunto com a nossa administradora.</p>
+
+            </article>
+
+            <article>
+
+                <h2 class="article-title">DEPOIMENTOS</h2>
+
+                <p class="article-description">Depoimentos de alguns de nossos clientes.</p>
+
+            </article>
+
+        </section>
+    
     </main>
+
+    <footer>
+
+        <div class="py-12 px-24 2xl:px-32">
+
+            <div>
+
+                <p>Sigam também as nossas redes sociais</p>
+
+                <div></div>
+
+                <p>@contdominio</p>
+
+            </div>
+
+            <div>
+                
+                <div>
+
+                    <h2 class="footer-company-details">SERVIÇOS</h2>
+                    
+                </div>
+
+                <div>
+
+                    <h2 class="footer-company-details">ONDE ESTAMOS?</h2>
+                    
+                </div>
+                
+                <div>
+
+                    <h2 class="footer-company-details">CONTATO</h2>
+                    
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="footer-copyright">
+            <p>Copyright © Contdominio Contabilidade Administração de Condominios - Todos os direitos reservados</p>
+        </div>
+
+    </footer>
+
 </body>
 </html>
