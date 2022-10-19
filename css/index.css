@@ -7,6 +7,107 @@ section, article {
   width: 100%;
 }
 
+article {
+  margin-bottom: 8rem;
+}
+article .article-title {
+  font-size: 1.3rem; /* 20.8px */
+  line-height: 2rem; /* 32px */
+  font-weight: 600;
+  color: #2571D1;
+}
+article .article-description {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+article h3 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 700;
+  color: #2571D1;
+}
+
+article#history p {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+#contact-left-side h2 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 600;
+}
+#contact-left-side p {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+@media screen and (max-width: 1024px) {
+  #contact-left-side {
+    text-align: center;
+  }
+}
+
+#contact-row {
+  height: 250px;
+  width: 2px;
+  background-color: #FAFAFC;
+}
+@media screen and (max-width: 1024px) {
+  #contact-row {
+    height: 250px;
+  }
+}
+
+#contact-right-side .social {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+.service {
+  background-color: #2571D1;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 450px;
+  padding: 2rem 2.5rem;
+  border-radius: 5px;
+}
+.service .service-image {
+  background-color: #FAFAFC;
+  width: 6rem;
+  height: 6rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+.service .service-image #adm-condo-icon {
+  width: 80%;
+  height: 80%;
+}
+.service .service-image #legalizacao-icon {
+  width: 60%;
+  height: 60%;
+}
+.service .service-title {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.service ul {
+  padding: 0 1rem;
+}
+.service li, .service p {
+  font-size: 1.3rem; /* 20.8px */
+  line-height: 2rem; /* 32px */
+}
+
 footer {
   background-color: #F1F1F1;
 }
@@ -21,8 +122,37 @@ footer .footer-copyright {
 
 #menu {
   box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.05);
+  max-height: 100px;
 }
 
+.collapse {
+  animation: collapse 0.5s ease forwards;
+}
+
+.open {
+  animation: open 0.5s ease forwards;
+}
+
+@keyframes collapse {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 0;
+    top: -100px;
+  }
+}
+@keyframes open {
+  from {
+    opacity: 0;
+    top: -100px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
 .nav__item {
   font-weight: 500;
   font-size: 1.125rem; /* 18px */

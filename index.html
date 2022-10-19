@@ -10,14 +10,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind config -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js"></script>
+
+    <!-- Main script -->
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <header id="menu" class="w-screen h-fit px-24 2xl:px-32 py-4 fixed top-0 z-50 flex flex-row justify-between items-center">
+    <header id="menu" class="w-screen bg-white h-fit px-8 2xl:px-32 py-4 fixed top-0 z-50 flex flex-row justify-between items-center">
         <img src="./assets/images/logo-contdominio.png" alt="Logo Contdomínio">
 
         <nav class="hidden xl:flex flex-row items-center gap-8">
@@ -28,7 +31,7 @@
         </nav>
     </header>
 
-    <main class="px-24 2xl:px-32">
+    <main class="px-8 2xl:px-32">
 
         <section>
 
@@ -39,7 +42,7 @@
                         <h1 class="text-primary font-bold text-5xl">Seu patrimônio em <span class="block w-fit bg-primary text-white p-1 px-2 mt-2.5 mb-3.5">boas mãos.</span></h1>
                         <p class="text-2xl">Consultoria a síndicos, moradores e profissionais realizada por especialistas.</p>
                     </div>
-                    <a id="read-more" class="text-xl text-primary w-fit flex flex-row gap-3" href="#">
+                    <a id="read-more" class="text-xl text-primary w-fit flex flex-row gap-3" href="#history">
                         SAIBA MAIS 
                         <img src="./assets/icons/shared/arrow-right.svg" alt="Seta para direita">
                     </a>
@@ -50,18 +53,18 @@
 
             </article>
 
-            <article>
+            <article id="history">
 
                 <h2 class="article-title">QUEM SOMOS</h2>
 
-                <h3>Por que Contdomínio?</h3>
+                <h3 class="mt-5 mb-3">Por que Contdomínio?</h3>
 
-                <p>Auxiliamos síndicos, moradores e profissionais em tudo que abrange as demandas de condomínios.</p>
+                <p class="mb-6">Auxiliamos síndicos, moradores e profissionais em tudo que abrange as demandas de condomínios.</p>
 
-                <h3>História</h3>
+                <h3 class="mb-3">História</h3>
 
-                <p>
-                    A Contdomínio é um escritório contábil e administradora de condomínios renomada que nasceu de uma sociedade de colegas
+                <p class="mb-3">
+                    A <span class="text-primary font-semibold">Contdomínio</span> é um escritório contábil e administradora de condomínios renomada que nasceu de uma sociedade de colegas
                     de profissão buscando trazer somatória de conhecimentos.
                 </p>
 
@@ -76,13 +79,99 @@
 
                 <h2 class="article-title">SERVIÇOS</h2>
 
-                <p class="article-description">Nossos serviços se concentram em várias áreas da administração do seu negócio.</p>
+                <p class="article-description mb-16">Nossos serviços se concentram em várias áreas da administração do seu negócio.</p>
+                
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                    
+                    <div class="service lg:w-2/3 lg:justify-self-end">
+                        <div class="service-image">
+                            <img id="adm-condo-icon" src="./assets/icons/services/adm-condo-icon.svg" alt="Serviços de Administração de Condomínios">
+                        </div>
+
+                        <h2 class="service-title">Serviços de Administração de Condomínios</h2>
+
+                        <ul class="list-disc">
+                            <li>Emissão de boletos</li>
+                            <li>Balancete</li>
+                            <li>Pasta de prestação de contas</li>
+                            <li>Atendimento a síndicos e moradores</li>
+                            <li>Orçamentos</li>
+                            <li>Controle de manutenções de equipamentos e serviços na área comum</li>
+                            <li>Suporte nas assembleias</li>
+                            <li>Suporte/informações para tomada de decisão do síndico e conselho fiscal/consultivo</li>
+                        </ul>
+
+                    </div>
+                    
+                    <div class="service lg:w-2/3">
+                        <div class="service-image">
+                            <img id="legalizacao-icon" src="./assets/icons/services/legalizacao-icon.svg" alt="Legalização">
+                        </div>
+
+                        <h2 class="service-title">Legalização</h2>
+
+                        <ul class="list-disc">
+                            <li>Abertura, encerramento e alteração de CNPJ</li>
+                            <li>Parcelamentos Ordinários de Débitos - Federais, Estaduais e Municipais</li>
+                            <li>Cadastro Junto a Vigilância Sanitária</li>
+                            <li>Regularização de Cadastro Junto à Órgãos Públicos</li>
+                            <li>Emissão de CND - Federal, Estadual e Municipal</li>
+                            <li>Licença de funcionamento.</li>
+                        </ul>
+
+                        <!-- <p class="service-description"></p> -->
+                    </div>
+
+                </div>
+
+                <div class="w-full md:mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <div class="service">
+                        <div class="service-image">
+                            <img id="dep-pessoal-icon" src="./assets/icons/services/dep-pessoal-icon.svg" alt="Assessoria em Departamento de Pessoal">
+                        </div>
+
+                        <h2 class="service-title">Assessoria em Departamento de Pessoal</h2>
+
+                        <p class="service-description">
+                            Assessoria em processos da rotina trabalhista.
+                        </p>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-image">
+                            <img id="contabil-icon" src="./assets/icons/services/contabil-icon.svg" alt="Assessoria Contábil">
+                        </div>
+
+                        <h2 class="service-title">Assessoria Contábil</h2>
+
+                        <p class="service-description">
+                            Balanço Patrimonial, Demonstrativo de Resultado do Exercício e Obrigações Contábeis visando a tomada de decisão para o
+                            crescimento de sua empresa.
+                        </p>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-image">
+                            <img id="asse-tributaria-icon" src="./assets/icons/services/asse-tributaria-icon.svg" alt="Assessoria Tributária">
+                        </div>
+
+                        <h2 class="service-title">Assessoria Tributária</h2>
+
+                        <ul class="list-disc">
+                            <li>Análise da carga tributária da empresa, a fim de obter redução de impostos</li>
+                            <li>Planejamento tributário feito por profissionais especializados</li>
+                            <li>Estudo de enquadramento tributário.</li>
+                        </ul>
+                    </div>
+
+                </div>
 
             </article>
 
-            <article>
+            <article class="relative w-full bg-primary text-white px-4 py-24 lg:px-32 lg:py-24 flex flex-col lg:flex-row items-center">
 
-                <div>
+                <div id="contact-left-side" class="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
 
                     <h2>VAMOS CONVERSAR</h2>
 
@@ -90,23 +179,44 @@
 
                 </div>
 
-                <div id="keep-in-touch-row"></div>
+                <div id="contact-row" class="rotate-90 lg:rotate-180"></div>
 
-                <div>
+                <div id="contact-right-side" class="w-full lg:w-1/2 flex gap-5 flex-col justify-center items-center">
 
-                    <div>
+                    <div class="flex gap-1 flex-col items-center">
 
-                        <p>@contdominio</p>
+                        <div class="flex flex-row gap-5">
+                            <a class="hover:brightness-90" target="_blank" href="https://www.facebook.com/contdominio">
+                                <img src="./assets/icons/social/facebook.svg" alt="Facebook icon">
+                            </a>
+                            <a class="hover:brightness-90" target="_blank" href="https://www.linkedin.com/in/contdom%C3%ADnio-contabilidade-e-adm-de-condom%C3%ADnios-b3833b189/">
+                                <img src="./assets/icons/social/linkedin.svg" alt="Linkedin icon">
+                            </a>
+                            <a class="hover:brightness-90" target="_blank" href="https://www.instagram.com/contdominio/">
+                                <img src="./assets/icons/social/instagram.svg" alt="Instagram icon">
+                            </a>
+                        </div>
+
+                        <p class="social">@contdominio</p>
 
                     </div>
-                    <div>
 
-                        <p>comercial@contdominio.com.br</p>
+                    <div class="flex gap-1 flex-col items-center">
+
+                        <img src="./assets/icons/social/email.svg" alt="Email icon">
+
+                        <p class="social">comercial@contdominio.com.br</p>
 
                     </div>
-                    <div>
 
-                        <p>(11) 4803-1859</p>
+                    <div class="flex gap-1 flex-col items-center">
+
+                        <div class="flex flex-row gap-5">
+                            <img src="./assets/icons/social/telefone.svg" alt="Phone icon">
+                            <img src="./assets/icons/social/whatsapp.svg" alt="Whatsapp icon">
+                        </div>
+
+                        <p class="social">(11) 4803-1859</p>
 
                     </div>
 
@@ -171,7 +281,7 @@
         
         </div>
 
-        <div class="footer-copyright">
+        <div class="footer-copyright font-semibold">
             <p>Copyright © Contdominio Contabilidade Administração de Condominios - Todos os direitos reservados</p>
         </div>
 
