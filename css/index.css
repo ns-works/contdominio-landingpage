@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #FAFAFC;
@@ -5,6 +6,13 @@ body {
 
 section, article {
   width: 100%;
+}
+
+.anchor {
+  display: block;
+  height: 200px;
+  margin-top: -200px;
+  visibility: hidden;
 }
 
 article {
@@ -30,6 +38,21 @@ article h3 {
 article#history p {
   font-size: 1.5rem; /* 24px */
   line-height: 2rem; /* 32px */
+}
+
+#responsabilidade-badge {
+  top: 30%;
+  right: 10%;
+}
+
+#excelencia-badge {
+  bottom: 25%;
+  left: 35%;
+}
+@media screen and (max-width: 1720px) {
+  #excelencia-badge {
+    left: 27%;
+  }
 }
 
 #contact-left-side h2 {
@@ -111,10 +134,38 @@ article#history p {
 footer {
   background-color: #F1F1F1;
 }
+footer .footer-company-details {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-color: #2571D1;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 9px;
+}
+footer #footer-service-list li {
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: start;
+  margin-bottom: 1rem;
+}
+footer #footer-service-list li::before {
+  content: "";
+  background: url(../assets/icons/footer/arrow-right.png);
+  display: block;
+  margin-top: 0.25rem;
+  width: 9px;
+  height: 18px;
+  min-width: 9px;
+  min-height: 17px;
+}
 footer .footer-copyright {
   color: #FFF;
+  font-weight: 600;
   background-color: #2571D1;
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,6 +241,42 @@ footer .footer-copyright {
 #read-more:hover::after {
   width: 100%;
   background: #2571D1;
+}
+
+/* Estilos para comentários */
+.commentary {
+  background-color: #2571D1;
+  color: #FFF;
+  padding: 2rem 2.5rem;
+  border-radius: 5px;
+  min-height: 470px;
+}
+.commentary .commentary-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.commentary .commentary-name {
+  color: #FFF;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+.commentary .commentary-role, .commentary .commentary-content {
+  font-size: 1.3rem; /* 20.8px */
+  line-height: 2rem; /* 32px */
+}
+.commentary .commentary-role {
+  margin-bottom: 0.5rem;
+}
+.commentary .generic-commentary-icon {
+  background-color: #FAFAFC;
+  border-radius: 50%;
+  width: 100px;
+  height: 101px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

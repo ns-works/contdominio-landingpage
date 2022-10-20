@@ -12,6 +12,13 @@ section, article {
   width: 100%;
 }
 
+.anchor{
+  display: block;
+  height: 200px;
+  margin-top: -200px;
+  visibility: hidden;
+}
+
 article {
 
   margin-bottom: 8rem;
@@ -40,6 +47,20 @@ article {
 article#history p {
   font-size: 1.5rem; /* 24px */
   line-height: 2rem; /* 32px */
+}
+
+#responsabilidade-badge {
+  top: 30%;
+  right: 10%;
+}
+
+#excelencia-badge {
+  bottom: 25%;
+  left: 35%;
+
+  @media  screen and (max-width: 1720px) {
+    left: 27%;
+  }
 }
 
 #contact-left-side {
@@ -99,6 +120,7 @@ article#history p {
 
   padding: 2rem 2.5rem;
   border-radius: 5px;
+  
 
   .service-image {
 
@@ -152,11 +174,50 @@ article#history p {
 footer {
   background-color: #F1F1F1;
 
+  .footer-company-details {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+
+    font-weight: 600;
+
+    text-decoration-line: underline;
+    text-decoration-color: $primary;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 9px;
+  }
+
+  #footer-service-list li {
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    justify-content: start;
+
+    margin-bottom: 1rem;
+
+    &::before {
+      content: '';
+      background: url(../assets/icons/footer/arrow-right.png);
+      display: block;
+
+      margin-top: 0.25rem;
+
+      width: 9px;
+      height: 18px;
+
+      min-width: 9px;
+      min-height: 17px;
+    }
+  }
+
   .footer-copyright {
     color: #FFF;
+    font-weight: 600;
     background-color: $primary;
 
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
 
     display: flex;
     justify-content: center;
@@ -239,11 +300,66 @@ footer {
     height: .1rem;
     width: 0;
     background: transparent;
-    // transition: width .5s ease, background-color .5s ease;
+
   }
   &:hover::after {
     width: 100%;
     background: $primary;
+  }
+
+}
+
+/* Estilos para comentários */
+
+.commentary {
+
+  background-color: $primary;
+  color: #FFF;
+  
+  padding: 2rem 2.5rem;
+  border-radius: 5px;
+
+  min-height: 470px;
+
+  .commentary-header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .commentary-name {
+
+    color: #FFF;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+
+  }
+
+  .commentary-role, .commentary-content {
+    
+    font-size: 1.3rem; /* 20.8px */
+    line-height: 2rem; /* 32px */
+
+  }
+
+  .commentary-role {
+    margin-bottom: 0.5rem;
+  }
+
+  .generic-commentary-icon {
+
+    background-color: $white;
+    border-radius: 50%;
+
+    width: 100px;
+    height: 101px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
