@@ -230,6 +230,16 @@ footer {
   max-height: 100px;
 }
 
+.mobile-collapsed {
+  transform: translateX(100%);
+  transition: .5s ease;
+}
+
+.mobile-expanded {
+  transform: translateX(0%);
+  transition: .5s ease;
+}
+
 // Collapse nav bar on scroll down
 .collapse {
   animation: collapse .5s ease forwards;

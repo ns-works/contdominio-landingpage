@@ -176,6 +176,16 @@ footer .footer-copyright {
   max-height: 100px;
 }
 
+.mobile-collapsed {
+  transform: translateX(100%);
+  transition: 0.5s ease;
+}
+
+.mobile-expanded {
+  transform: translateX(0%);
+  transition: 0.5s ease;
+}
+
 .collapse {
   animation: collapse 0.5s ease forwards;
 }
