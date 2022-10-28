@@ -16,6 +16,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js"></script>
 
+    <!-- Splide Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+
     <!-- Main script -->
     <script src="./js/index.js" defer></script>
     <script src="./js/mobile.js" defer></script>
@@ -26,15 +30,15 @@
 
         <img src="./assets/images/logo-contdominio.png" alt="Logo Contdomínio">
 
-        <div id="open-menu-mobile" class="w-12">
+        <div id="open-menu-mobile" class="w-12 hover:cursor-pointer">
             <img src="./assets/icons/menu/menu.svg" alt="Abrir menu">
         </div>
 
     </header>
 
-    <div id="menu-mobile" class="mobile-collapsed w-1/2 h-screen bg-primary text-white px-8 2xl:px-32 py-4 fixed xl:hidden top-0 right-0 z-50 flex gap-10 flex-col justify-center items-center">
+    <div id="menu-mobile" class="mobile-collapsed w-1/2 h-screen bg-primary text-white shadow-2xl px-8 2xl:px-32 py-4 fixed xl:hidden top-0 right-0 z-50 flex gap-10 flex-col justify-center items-center">
 
-        <div id="close-menu-mobile" class="absolute top-10 right-10 bg-white w-12 flex justify-center items-center rounded-full">
+        <div id="close-menu-mobile" class="absolute top-10 right-10 bg-white w-12 flex justify-center items-center rounded-full hover:cursor-pointer">
             <img src="./assets/icons/menu/close.svg" alt="Fechar menu">
         </div>
 
@@ -276,16 +280,182 @@
 
                 <p class="article-description mb-24">Empresas parceiras que atuam em conjunto com a nossa administradora.</p>
 
-                <div class="flex gap-10 flex-col lg:flex-row items-center justify-center">
+                <section class="splide hidden xl:block" aria-label="Empresas parceiras">
 
-                    <img class="grayscale" src="./assets/images/company-example.png" alt="Empresa de exemplo">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide partner-slide grid gap-2 grid-cols-4">
 
-                    <img class="grayscale" src="./assets/images/company-example.png" alt="Empresa de exemplo">
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo - Kleber Rigamonti.jpg" alt="Logo - Kleber Rigamonti">
+                                </div>
 
-                    <img class="grayscale" src="./assets/images/company-example.png" alt="Empresa de exemplo">
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Academia For You.png" alt="Logo - Academia For You">
+                                </div>
 
-                </div>
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Casas André Luiz.png" alt="Logo - Casas André Luiz">
+                                </div>
+                                
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Circuito Cinemas.jpg" alt="Logo - Circuito Cinemas">
+                                </div>
 
+                            </li>
+                            <li class="splide__slide partner-slide grid grid-cols-2">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Espaço Laser.jpeg" alt="Logo - Espaço Laser">
+                                </div>
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Faculdade Campo Eliseos.png" alt="Logo - Faculdade Campo Eliseos">
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="splide hidden md:block xl:hidden" aria-label="Empresas parceiras">
+
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide partner-slide grid gap-2 grid-cols-3">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo - Kleber Rigamonti.jpg" alt="Logo - Kleber Rigamonti">
+                                </div>
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Academia For You.png" alt="Logo - Academia For You">
+                                </div>
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Casas André Luiz.png" alt="Logo - Casas André Luiz">
+                                </div>
+                                
+                            </li>
+
+                            <li class="splide__slide partner-slide grid grid-cols-3">
+                                
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Circuito Cinemas.jpg" alt="Logo - Circuito Cinemas">
+                                </div>
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Espaço Laser.jpeg" alt="Logo - Espaço Laser">
+                                </div>
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Faculdade Campo Eliseos.png" alt="Logo - Faculdade Campo Eliseos">
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+                
+                <section class="splide hidden sm:block md:hidden" aria-label="Empresas parceiras">
+
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide partner-slide grid grid-cols-2">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo - Kleber Rigamonti.jpg" alt="Logo - Kleber Rigamonti">
+                                </div>
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Academia For You.png" alt="Logo - Academia For You">
+                                </div>
+
+                            </li>
+                            <li class="splide__slide partner-slide grid grid-cols-2">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Casas André Luiz.png" alt="Logo - Casas André Luiz">
+                                </div>
+                                
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Circuito Cinemas.jpg" alt="Logo - Circuito Cinemas">
+                                </div>
+
+                            </li>
+                            <li class="splide__slide partner-slide grid grid-cols-2">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Espaço Laser.jpeg" alt="Logo - Espaço Laser">
+                                </div>
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Faculdade Campo Eliseos.png" alt="Logo - Faculdade Campo Eliseos">
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+                
+                <section class="splide sm:hidden" aria-label="Empresas parceiras">
+
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide partner-slide">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo - Kleber Rigamonti.jpg" alt="Logo - Kleber Rigamonti">
+                                </div>
+
+                            </li>
+
+                            <li class="splide__slide partner-slide">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Academia For You.png" alt="Logo - Academia For You">
+                                </div>
+
+                            </li>
+
+                            <li class="splide__slide partner-slide">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Casas André Luiz.png" alt="Logo - Casas André Luiz">
+                                </div>
+                                
+                            </li>
+
+                            <li class="splide__slide partner-slide">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Circuito Cinemas.jpg" alt="Logo - Circuito Cinemas">
+                                </div>
+
+                            </li>
+
+                            <li class="splide__slide partner-slide">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Espaço Laser.jpeg" alt="Logo - Espaço Laser">
+                                </div>
+
+                            </li>
+
+                            <li class="splide__slide partner-slide">
+
+                                <div class="partner-container">
+                                    <img class="partner" src="./assets/images/partnerships/Logo Faculdade Campo Eliseos.png" alt="Logo - Faculdade Campo Eliseos">
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
             </article>
 
             <article>
@@ -492,6 +662,16 @@
         </div>
 
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elms = document.getElementsByClassName('splide');
+
+            for (var i = 0; i < elms.length; i++) {
+                new Splide(elms[i]).mount();
+            }
+        });
+    </script>
 
 </body>
 </html>
