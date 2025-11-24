@@ -22,6 +22,7 @@ A interface foi construída com foco em performance e experiência do usuário (
   - [Interatividade](#interatividade)
 - [Estrutura de pastas](#estrutura-pastas)
 - [Como Executar](#como-executar)
+- [Autor](#autor)
 
 ## Tecnologias Utilizadas
 
@@ -89,3 +90,16 @@ Este é um projeto estático, portanto não requer instalação de dependências
    ```
 2. **Abra o projeto**: Navegue até a pasta do projeto e abra o arquivo **index.html** no seu navegador de preferência.
 3. **Compilação do SASS (Opcional)**: Caso deseje editar os estilos no arquivo .scss, você precisará de um compilador SASS (como a extensão Live Sass Compiler do VS Code) para gerar o arquivo css/index.css atualizado.
+
+## Autor
+
+[Nicolas Samuel](https://www.linkedin.com/in/nicolas-samuel-veras/)
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Behance][behance-shield]][behance-url]
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin-white&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/nicolas-samuel-veras/
+[behance-shield]: https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&colorB=555
+[behance-url]: https://www.behance.net/nicolsam
