@@ -22,7 +22,7 @@ A interface foi construída com foco em performance e experiência do usuário (
 - [Funcionalidades](#funcionalidades)
   - [Seções Principais](#seções-principais)
   - [Interatividade](#interatividade)
-- [Estrutura de pastas](#estrutura-pastas)
+- [Estrutura de pastas](#estrutura-de-pastas)
 - [Como Executar](#como-executar)
 - [Autor](#autor)
 
