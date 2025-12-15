@@ -17,8 +17,8 @@ A interface foi construída com foco em performance e experiência do usuário (
 ## Sumário
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-  - [Frontend & Estilização](#frontend-&-estilização)
-  - [Bibliotecas & Ferramentas](#bibliotecas-&-ferramentas)
+  - [Frontend & Estilização](#frontend--estilização)
+  - [Bibliotecas & Ferramentas](#bibliotecas--ferramentas)
 - [Funcionalidades](#funcionalidades)
   - [Seções Principais](#seções-principais)
   - [Interatividade](#interatividade)
