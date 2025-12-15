@@ -4,6 +4,8 @@
 [![forthebadge](https://forthebadge.com/api/badges/generate?panels=2&primaryLabel=CRIADO+COM&secondaryLabel=SASS&primaryBGColor=%23fc71fe&primaryTextColor=%23000000&secondaryBGColor=%23ff00c8&secondaryTextColor=%23000000&primaryFontSize=12&primaryFontWeight=600&primaryLetterSpacing=2&primaryFontFamily=Roboto&primaryTextTransform=uppercase&secondaryFontSize=12&secondaryFontWeight=900&secondaryLetterSpacing=2&secondaryFontFamily=Montserrat&secondaryTextTransform=uppercase&secondaryIcon=sass&secondaryIconColor=%23FFFFFF&secondaryIconSize=16&secondaryIconPosition=left)](https://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
+![Imagem seção principal da Landing Page Contdominio](docs/main-screenshot.png)
+
 ## Sobre o Projeto
 
 Uma **Landing Page Institucional** responsiva e moderna desenvolvida para a empresa **Contdomínio**, especializada em administração de condomínios e assessoria contábil.
