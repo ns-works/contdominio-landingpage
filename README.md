@@ -97,11 +97,14 @@ Este é um projeto estático, portanto não requer instalação de dependências
 
 [Nicolas Samuel](https://www.linkedin.com/in/nicolas-samuel-veras/)
 
+[![Email][email-shield]][email-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Behance][behance-shield]][behance-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin-white&colorB=555
+[email-shield]: https://img.shields.io/badge/-contato%40nicolsam.com.br-white?style=for-the-badge&logo=gmail&logoColor=#ee4236
+[email-url]: mailto:contato@nicolsam.com.br?subject=Re:Olá!
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-white.svg?style=for-the-badge&logo=linkedin-white&colorB=0078b5
 [linkedin-url]: https://www.linkedin.com/in/nicolas-samuel-veras/
-[behance-shield]: https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&colorB=555
+[behance-shield]: https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&colorB=0959ff
 [behance-url]: https://www.behance.net/nicolsam
